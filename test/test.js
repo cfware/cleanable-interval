@@ -1,12 +1,7 @@
 import test from 'ava';
+import delay from 'delay';
 
 import cleanableInterval from '..';
-
-function sleepFor(ms) {
-	return new Promise(resolve => {
-		setTimeout(resolve, ms);
-	});
-}
 
 test('basic test', async t => {
 	let iter = 0;
@@ -16,16 +11,16 @@ test('basic test', async t => {
 
 	t.is(iter, 0);
 
-	await sleepFor(150);
+	await delay(150);
 	t.is(iter, 1);
 
-	await sleepFor(100);
+	await delay(100);
 	t.is(iter, 2);
 
-	await sleepFor(100);
+	await delay(100);
 	t.is(iter, 3);
 
 	cleanupFn();
-	await sleepFor(100);
+	await delay(100);
 	t.is(iter, 3);
 });
