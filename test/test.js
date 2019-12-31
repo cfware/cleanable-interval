@@ -1,7 +1,9 @@
+import {promisify} from 'util';
 import test from 'ava';
-import delay from 'delay';
 
 import cleanableInterval from '..';
+
+const delay = promisify(setTimeout);
 
 test('basic test', async t => {
 	let iter = 0;
