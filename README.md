@@ -10,7 +10,7 @@ A variant of setInterval that returns a cleanup function.
 
 ### Install @cfware/cleanable-interval
 
-This module requires node.js 8 or above.
+This module requires node.js 13.7.0 or above.
 
 ```sh
 npm i --save @cfware/cleanable-interval
@@ -31,14 +31,6 @@ const cleanupFn = cleanableInterval(() => {
 }, 100);
 ```
 
-## Running tests
-
-Tests are provided by xo and ava.
-
-```sh
-npm install
-npm test
-```
 
 [npm-image]: https://img.shields.io/npm/v/@cfware/cleanable-interval.svg
 [npm-url]: https://npmjs.org/package/@cfware/cleanable-interval
