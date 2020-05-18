@@ -1,20 +1,6 @@
-# @cfware/cleanable-interval
-
-![Tests][tests-status]
-[![Greenkeeper badge][gk-image]](https://greenkeeper.io/)
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![MIT][license-image]](LICENSE)
+# @cfware/cleanable-interval [![NPM Version][npm-image]][npm-url]
 
 A variant of setInterval that returns a cleanup function.
-
-### Install @cfware/cleanable-interval
-
-This module requires node.js 13.7.0 or above.
-
-```sh
-npm i --save @cfware/cleanable-interval
-```
 
 ## Usage
 
@@ -34,8 +20,3 @@ const cleanupFn = cleanableInterval(() => {
 
 [npm-image]: https://img.shields.io/npm/v/@cfware/cleanable-interval.svg
 [npm-url]: https://npmjs.org/package/@cfware/cleanable-interval
-[tests-status]: https://github.com/cfware/cleanable-interval/workflows/Tests/badge.svg
-[gk-image]: https://badges.greenkeeper.io/cfware/cleanable-interval.svg
-[downloads-image]: https://img.shields.io/npm/dm/@cfware/cleanable-interval.svg
-[downloads-url]: https://npmjs.org/package/@cfware/cleanable-interval
-[license-image]: https://img.shields.io/npm/l/@cfware/cleanable-interval.svg
