@@ -1,7 +1,7 @@
 import {promisify} from 'util';
 import t from 'libtap';
 
-import cleanableInterval from './cleanable-interval.js';
+import cleanableInterval from '@cfware/cleanable-interval';
 
 const delay = promisify(setTimeout);
 
