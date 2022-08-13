@@ -1,4 +1,4 @@
-import {promisify} from 'util';
+import {promisify} from 'node:util';
 import t from 'libtap';
 
 import cleanableInterval from '@cfware/cleanable-interval';
@@ -7,7 +7,7 @@ const delay = promisify(setTimeout);
 
 t.test('basic test', async t => {
 	let iter = 0;
-	const cleanupFn = cleanableInterval(() => {
+	const cleanup = cleanableInterval(() => {
 		iter++;
 	}, 100);
 
@@ -22,7 +22,7 @@ t.test('basic test', async t => {
 	await delay(100);
 	t.equal(iter, 3);
 
-	cleanupFn();
+	cleanup();
 	await delay(100);
 	t.equal(iter, 3);
 });

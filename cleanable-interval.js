@@ -1,5 +1,5 @@
-export default (fn, delay, ...args) => {
-	const handle = setInterval(fn, delay, ...args);
+export default (callback, delay, ...args) => {
+	const handle = setInterval(callback, delay, ...args);
 
 	return () => clearInterval(handle);
 };
