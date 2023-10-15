@@ -1,6 +1,6 @@
 {
     "name": "@cfware/cleanable-interval",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "A variant of setInterval that returns a cleanup function",
     "main": "cleanable-interval.js",
     "exports": "./cleanable-interval.js",
