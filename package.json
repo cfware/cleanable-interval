@@ -1,35 +1,35 @@
 {
-	"name": "@cfware/cleanable-interval",
-	"version": "0.1.3",
-	"description": "A variant of setInterval that returns a cleanup function",
-	"main": "cleanable-interval.js",
-	"exports": "./cleanable-interval.js",
-	"type": "module",
-	"scripts": {
-		"pretest": "cfware-lint .",
-		"tests-only": "nyc -s node --experimental-loader @istanbuljs/esm-loader-hook test.js",
-		"test": "npm run -s tests-only",
-		"posttest": "nyc report --check-coverage"
-	},
-	"engines": {
-		"node": ">=16.12.0"
-	},
-	"author": "Corey Farrell",
-	"license": "MIT",
-	"keywords": [],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/cfware/cleanable-interval.git"
-	},
-	"bugs": {
-		"url": "https://github.com/cfware/cleanable-interval/issues"
-	},
-	"homepage": "https://github.com/cfware/cleanable-interval#readme",
-	"devDependencies": {
-		"@cfware/lint": "^3.0.1",
-		"@cfware/nyc": "^0.7.1",
-		"@istanbuljs/esm-loader-hook": "^0.2.0",
-		"libtap": "^1.4.0",
-		"nyc": "^15.1.0"
-	}
+    "name": "@cfware/cleanable-interval",
+    "version": "0.1.3",
+    "description": "A variant of setInterval that returns a cleanup function",
+    "main": "cleanable-interval.js",
+    "exports": "./cleanable-interval.js",
+    "type": "module",
+    "scripts": {
+        "pretest": "cfware-lint .",
+        "tests-only": "nyc -s node --experimental-loader @istanbuljs/esm-loader-hook test.js",
+        "test": "npm run -s tests-only",
+        "posttest": "nyc report --check-coverage"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "author": "Corey Farrell",
+    "license": "MIT",
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cfware/cleanable-interval.git"
+    },
+    "bugs": {
+        "url": "https://github.com/cfware/cleanable-interval/issues"
+    },
+    "homepage": "https://github.com/cfware/cleanable-interval#readme",
+    "devDependencies": {
+        "@cfware/lint": "^4",
+        "@cfware/nyc": "^1",
+        "@istanbuljs/esm-loader-hook": "^0.2",
+        "libtap": "^1",
+        "nyc": "^15"
+    }
 }
