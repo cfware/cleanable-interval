@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.4](https://github.com/cfware/cleanable-interval/compare/v0.1.3...v0.1.4) (2023-10-15)
+
+
+### Bug Fixes
+
+* Update development dependencies ([bffc47f](https://github.com/cfware/cleanable-interval/commit/bffc47f1be0b3206a239e3a04378330e74ee5950))
+
 ### [0.1.3](https://github.com/cfware/cleanable-interval/compare/v0.1.2...v0.1.3) (2020-11-06)
 
 
